@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ардақ 50 жас</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Georgia", serif;
+      background: #f7efe2;
+      color: #3b2a1a;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 60px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(60, 38, 20, 0.55), rgba(60, 38, 20, 0.55)),
+        url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .card {
+      max-width: 650px;
+      background: rgba(255, 250, 240, 0.92);
+      padding: 45px 25px;
+      border-radius: 28px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+      border: 1px solid #d6b77a;
+    }
+
+    .hero .card {
+      background: rgba(40, 25, 12, 0.65);
+      border: 1px solid #e3c177;
+    }
+
+    .small {
+      font-size: 18px;
+      letter-spacing: 3px;
+      color: #e3c177;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 64px;
+      margin-bottom: 10px;
+      color: #f5d27d;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 25px;
+      color: #7a4d1d;
+    }
+
+    .hero h2 {
+      color: #fff4d6;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .gold {
+      color: #b07a23;
+      font-weight: bold;
+    }
+
+    .details {
+      font-size: 22px;
+      line-height: 2;
+    }
+
+    .timer {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .time-box {
+      background: #7a4d1d;
+      color: white;
+      padding: 18px;
+      border-radius: 18px;
+      min-width: 90px;
+    }
+
+    .time-box span {
+      display: block;
+      font-size: 30px;
+      font-weight: bold;
+      color: #f5d27d;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 15px 28px;
+      background: #7a4d1d;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 35px;
+      text-align: center;
+      background: #3b2a1a;
+      color: #f5d27d;
+      font-size: 18px;
+    }
+
+    #musicBtn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #7a4d1d;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    @media (max-width: 600px) {
+
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <button id="musicBtn">♫ Әуенді қосу</button>
+
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <section class="hero">
+    <div class="card">
+      <div class="small">МЕРЕЙЛІ МЕРЕЙТОЙ</div>
+      <h1>Ардақ</h1>
+      <h2>50 жас</h2>
+      <p>Сіздерді ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+
+      <h2>Құрметті қонақтар!</h2>
+
+      <p>
+        Сіздерді мерейлі 50 жас мерейтойыма арнайы жайылған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
+      </p>
+
+      <p>
+        Қуанышымызға ортақтасып, ақ тілектеріңізді арнай келеді деп күтеміз.
+      </p>
+
+      <p class="gold">
+        Той иелері: Ардақ & Айнұр
+      </p>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+
+      <h2>Той салтанаты</h2>
+
+      <div class="details">
+        📅 25.07.2026<br>
+        🕔 17:00<br>
+        📍 Өтеген батыр ауылы<br>
+        Аубакирова 14а<br>
+        “Салтанат сарайы”
+      </div>
+
+      <a class="button"
+         href="https://2gis.kz/search/%D0%90%D1%83%D0%B1%D0%B0%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%2014%D0%B0%20%D3%A8%D1%82%D0%B5%D0%B3%D0%B5%D0%BD%20%D0%B1%D0%B0%D1%82%D1%8B%D1%80"
+         target="_blank">
+
+         Картаны ашу
+
+      </a>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+
+      <h2>Мерейтойға дейін</h2>
+
+      <div class="timer">
+        <div class="time-box">
+          <span id="days">0</span>
+          күн
+        </div>
+
+        <div class="time-box">
+          <span id="hours">0</span>
+          сағат
+        </div>
+
+        <div class="time-box">
+          <span id="minutes">0</span>
+          минут
+        </div>
+
+        <div class="time-box">
+          <span id="seconds">0</span>
+          секунд
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+
+      <h2>Сіздерді асыға күтеміз!</h2>
+
+      <p>
+        Жақындарымыздың ақ батасы мен ізгі тілегі —
+        біз үшін ең үлкен қуаныш.
+      </p>
+
+      <p class="gold">
+        Қош келдіңіздер!
+      </p>
+
+    </div>
+  </section>
+
+  <footer>
+    50 жас мерейтой
+  </footer>
+
+  <script>
+
+    const eventDate = new Date("July 25, 2026 17:00:00").getTime();
+
+    function updateTimer() {
+
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+
+        document.querySelector(".timer").innerHTML = "Той басталды!";
+        return;
+
+      }
+
+      document.getElementById("days").innerText =
+        Math.floor(distance / (1000 * 60 * 60 * 24));
+
+      document.getElementById("hours").innerText =
+        Math.floor((distance / (1000 * 60 * 60)) % 24);
+
+      document.getElementById("minutes").innerText =
+        Math.floor((distance / (1000 * 60)) % 60);
+
+      document.getElementById("seconds").innerText =
+        Math.floor((distance / 1000) % 60);
+
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+
+    const music = document.getElementById("bgMusic");
+    const btn = document.getElementById("musicBtn");
+
+    btn.addEventListener("click", () => {
+
+      music.play();
+      btn.style.display = "none";
+
+    });
+
+  </script>
+
+</body>
+</html>
